@@ -152,6 +152,8 @@ public final class Utilities {
     @IntDef({TRANSLATE_UP, TRANSLATE_DOWN, TRANSLATE_LEFT, TRANSLATE_RIGHT})
     public @interface AdjustmentDirection{}
 
+    public static final String KEY_RECENTS_MEMINFO = "pref_recents_meminfo";
+
     /**
      * Returns true if theme is dark.
      */
@@ -842,4 +844,10 @@ public final class Utilities {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
         return !prefs.getBoolean(InvariantDeviceProfile.KEY_WORKSPACE_LOCK, false);
     }
+
+    public static boolean isShowMeminfo(Context context) {
+        SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_RECENTS_MEMINFO, false);
+   }
+
 }
