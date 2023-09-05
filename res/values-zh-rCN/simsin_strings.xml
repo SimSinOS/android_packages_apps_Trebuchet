@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s 可用 | %2$s 总内存</string>
+    <string name="recents_meminfo_title">内存信息</string>
+</resources>
